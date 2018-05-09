@@ -1,4 +1,4 @@
-package com.hmproductions.proximityspider;
+package com.hmproductions.aidlconfig;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

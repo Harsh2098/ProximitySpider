@@ -1,4 +1,4 @@
-package com.hmproductions.proximityspider;
+package com.hmproductions.aidlconfig;
 
 import org.junit.Test;
 

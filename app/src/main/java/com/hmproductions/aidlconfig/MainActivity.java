@@ -1,4 +1,4 @@
-package com.hmproductions.proximityspider;
+package com.hmproductions.aidlconfig;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -7,14 +7,9 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.media.MediaPlayer;
-import android.media.RingtoneManager;
-import android.os.AsyncTask;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -37,12 +32,12 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        secondsRemaining_textView = (TextView)findViewById(R.id.secTextView);
-        proximity_textView = (TextView)findViewById(R.id.proximity_textView);
+        secondsRemaining_textView = findViewById(R.id.secTextView);
+        proximity_textView = findViewById(R.id.proximity_textView);
 
-        alarm_textView = (TextView)findViewById(R.id.alarm_textView);
+        alarm_textView = findViewById(R.id.alarm_textView);
 
-        progressBar = (ProgressBar)findViewById(R.id.progressBar);
+        progressBar = findViewById(R.id.progressBar);
         progressBar.setIndeterminate(false);
         progressBar.setMax(10);
 
